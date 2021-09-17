@@ -1,0 +1,59 @@
+label{
+    color: black;
+}
+select{
+    border-radius: 10px;
+
+}
+option{
+    border-radius: 10px;
+}
+#button{
+    border-radius: 10px;
+    margin-left: 37px;
+    margin-bottom: -8px;
+
+}
+
+
+.inputtext{
+    background-color:green;
+    width:50%;
+}
+#formlabel{
+    margin-left: -51px;
+    
+    
+}
+#formcontrol{
+    width: 50%;
+    float: right;
+    background-color:rgb(180, 180, 180);
+    border-radius: 10px;
+
+    
+}
+#formdate{
+    width: 50%;
+    float: right;
+    background-color:rgb(161, 165, 161);
+    border-style: dashed;
+    
+}
+#selectvalue{
+    width: 50%;
+    float: right;
+    margin-right: -9px;
+    border-radius: 10px;
+    color: rgb(120, 122, 120);
+    font-weight:bold;
+    font-style: italic;
+
+
+    
+}
+#formselect{
+    margin-left: -43px;
+    margin-right: -9px;
+
+}
