@@ -7,11 +7,11 @@ import { createStore } from "redux";
 import DataReducer from "./reducers/DataReducer";
 import { Provider } from "react-redux";
 
-if (localStorage.getItem('transactions') === null)
-    localStorage.setItem('transactions', JSON.stringify([]))
+if (localStorage.getItem('datas') === null)
+    localStorage.setItem('datas', JSON.stringify([]))
 let initialState = {
     currentIndex: -1,
-    list: JSON.parse(localStorage.getItem('transactions'))
+    list: JSON.parse(localStorage.getItem('datas'))
 }
 const store = createStore(DataReducer, initialState)
 

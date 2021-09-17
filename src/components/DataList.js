@@ -11,11 +11,11 @@ class DataList extends Component {
 
 
     handleEdit = (index) => {
-        this.props.updateTransactionIndex(index)
+        this.props.updateDataIndex(index)
     }
 
     handleDelete = (index) => {
-        this.props.deleteTransaction(index)
+        this.props.deleteData(index)
     }
 
     render() {
@@ -29,6 +29,7 @@ class DataList extends Component {
               <th>Name</th>
               <th>Date</th>
               <th>Profession</th>
+              <th>Gender</th>
               <th>Edit</th>
               <th>Delete</th>
             </tr>
@@ -39,6 +40,8 @@ class DataList extends Component {
                                 <td>{item.name}</td>
                                 <td>{item.date}</td>
                                 <td>{item.profession}</td>
+                                <td>{item.radio}</td>
+
                                 <td><Button variant="secondary " onClick={() => this.handleEdit(index)}>Edit</Button></td>
                                 <td><Button variant="danger" onClick={() => this.handleDelete(index)}>Delete</Button></td>
                             </tr>
@@ -58,8 +61,8 @@ const mapStateToProps = (state) => {
 
 const mapDispatchToProps = (dispatch) => {
     return bindActionCreators({
-        updateTransactionIndex: actions.updateIndex,
-        deleteTransaction: actions.Delete
+        updateDataIndex: actions.updateIndex,
+        deleteData: actions.Delete
     }, dispatch)
 }
 

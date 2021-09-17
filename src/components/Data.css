@@ -57,3 +57,8 @@ option{
     margin-right: -9px;
 
 }
+.radio{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
